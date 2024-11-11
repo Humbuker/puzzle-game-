@@ -53,7 +53,6 @@ function imgDropOn (evt) {
         if (allowed) {
             dragSrcElem.innerHTML = this.innerHTML;
             this.innerHTML = evt.dataTransfer.getData('text/html');
-            sound.play();
             checkWin();
         }
         return false;
